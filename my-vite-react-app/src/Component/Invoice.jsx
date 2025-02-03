@@ -48,8 +48,9 @@ const Invoice = () => {
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOK-ExH64w4vaz6r2HY7kpEc0SEZKmpq7CKg&s" alt="Method 4" />
           </div>
         </div>
-        <button className="order-button">Place An Order Now</button>
+        
       </div>
+      <button className="order-button">Place An Order Now</button>
     </div>
   );
 };
