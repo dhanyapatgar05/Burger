@@ -1,45 +1,44 @@
+
 .invoice-container {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 0.75rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 20rem;
-  }
-  
-  .invoice-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  .invoice-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.5rem;
-  }
-  
-  .invoice-item span {
-    font-size: 1.5rem;
-  }
-  
-  .invoice-summary {
-    border-top: 1px solid #e5e7eb;
-    margin: 1rem 0;
-    padding-top: 1rem;
-  }
-  
-  .invoice-total {
-    font-weight: bold;
-    font-size: 1.125rem;
-    margin-top: 0.5rem;
-  }
-  
-  .payment-icons {
-    display: flex;
-    justify-content: space-between;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
-  }
-  
-    
+  width: 300px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.invoice-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.invoice-image {
+  background-color: #cccdd1;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+.invoice-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.invoice-name {
+  font-size: 16px;
+}
+
+.invoice-price {
+  font-size: 16px;
+  color: #ff5722;
+  font-weight: bold;
+}

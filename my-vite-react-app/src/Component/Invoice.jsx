@@ -1,56 +1,25 @@
 import React from "react";
-import { FaCcVisa, FaCcMastercard, FaPaypal, FaMoneyBillWave, FaHamburger, FaCheese, FaDrumstickBite } from "react-icons/fa";
+import "./Invoice.css";
 
 const Invoice = () => {
   const items = [
-    { name: "Vegetable Burger", price: 25, image: <FaHamburger className="text-2xl" /> },
-    { name: "Meat Burger", price: 28, image: <FaDrumstickBite className="text-2xl" /> },
-    { name: "Cheese Burger", price: 32, image: <FaCheese className="text-2xl" /> },
+    { name: "Vegetable Burger", price: 25, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKnlT9S6v-wsXciae3Mtt633Es5G0DefO90Q&s" },
+    { name: "Meat Burger", price: 28, image: "https://png.pngtree.com/png-clipart/20241129/original/pngtree-burger-with-vegetable-png-image_17410928.png" },
+    { name: "Cheese Burger", price: 32, image: "https://png.pngtree.com/png-clipart/20230427/original/pngtree-food-burger-sauce-png-image_9113991.png" },
   ];
 
-  const subtotal = items.reduce((sum, item) => sum + item.price, 0);
-  const tax = -6;
-  const total = subtotal + tax;
-
   return (
-    <div className="bg-white p-6 rounded-xl shadow-lg w-80">
-      <h2 className="text-xl font-bold mb-4">Invoice</h2>
-      <div>
-        {items.map((item, index) => (
-          <div key={index} className="flex justify-between items-center mb-2">
-            <span>{item.image}</span>
-            <div className="flex-1 ml-2">
-              <p className="text-sm font-medium">{item.name}</p>
-              <p className="text-sm text-red-500">${item.price}</p>
-            </div>
+    <div className="invoice-container">
+      <h2 className="invoice-title">Invoice</h2>
+      {items.map((item, index) => (
+        <div key={index} className="invoice-item">
+          <img src={item.image} alt={item.name} className="invoice-image" />
+          <div className="invoice-details">
+            <span className="invoice-name">{item.name}</span>
+            <span className="invoice-price">${item.price}</span>
           </div>
-        ))}
-      </div>
-      <div className="border-t border-gray-200 my-4"></div>
-      <div className="text-sm">
-        <div className="flex justify-between">
-          <span>Sub Total</span>
-          <span>${subtotal}</span>
         </div>
-        <div className="flex justify-between text-red-500">
-          <span>Tax</span>
-          <span>${tax}</span>
-        </div>
-        <div className="flex justify-between font-bold text-lg mt-2">
-          <span>Total Payment</span>
-          <span>${total}</span>
-        </div>
-      </div>
-      <div className="border-t border-gray-200 my-4"></div>
-      <div className="flex justify-between gap-3 mb-4">
-        <FaCcVisa className="text-2xl" />
-        <FaCcMastercard className="text-2xl" />
-        <FaPaypal className="text-2xl" />
-        <FaMoneyBillWave className="text-2xl" />
-      </div>
-      <button className="w-full bg-orange-500 text-white py-2 rounded-lg font-semibold hover:bg-orange-600">
-        Place An Order Now
-      </button>
+      ))}
     </div>
   );
 };
