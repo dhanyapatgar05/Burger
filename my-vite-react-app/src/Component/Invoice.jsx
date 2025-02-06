@@ -3,7 +3,7 @@ import "./Invoice.css";
 
 const Invoice = () => {
   const items = [
-    { name: "Vegetable Burger", price: 25, image: "https://raw.githubusercontent.com/hdpngworld/HPW/main/uploads/652a78b5108c3-CHICKEN%20CHEESE%20BURGER.png" },
+    { name: "Vegetable Burger", price: 25, image: "https://i.pinimg.com/736x/97/da/26/97da268ca85129275b94af124e9862ed.jpg" },
     { name: "Meat Burger", price: 28, image: "https://png.pngtree.com/png-clipart/20241129/original/pngtree-burger-with-vegetable-png-image_17410928.png" },
     { name: "Cheese Burger", price: 32, image: "https://png.pngtree.com/png-clipart/20230427/original/pngtree-food-burger-sauce-png-image_9113991.png" },
   ];
@@ -40,7 +40,7 @@ const Invoice = () => {
         <h4>Payment Method</h4>
         <div className="payment-methods">
           <div className="payment-row">
-          <img src="https://play-lh.googleusercontent.com/xPaEnD2D5oRqk0FyMW5xmGoom8zA98jjSzoJiAY-WVk8fOaFfslZOCpvbKuiPTD9t2s" alt="Method 1" />
+          <img src="https://images.sftcdn.net/images/t_app-icon-m/p/c421d069-1fe6-4505-85c9-fc80c2ee9769/374478980/payment-bird-logo" alt="Method 1" />
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHoKU2DWF-OE9fALVdU3N8czP4GXZ72kboFA&s" alt="Method 2" />
           </div>
           <div className="payment-row">
